@@ -20,6 +20,7 @@ Configure o provider no arquivo .env através da variável LLM_PROVIDER.
 import os
 import sys
 import json
+import time
 from typing import List, Dict, Any
 from pathlib import Path
 from dotenv import load_dotenv
@@ -212,6 +213,8 @@ def evaluate_prompt(
                 precision_scores.append(precision["score"])
 
                 print(f"      [{i}/{min(10, len(examples))}] F1:{f1['score']:.2f} Clarity:{clarity['score']:.2f} Precision:{precision['score']:.2f}")
+
+                time.sleep(15)
 
         avg_f1 = sum(f1_scores) / len(f1_scores) if f1_scores else 0.0
         avg_clarity = sum(clarity_scores) / len(clarity_scores) if clarity_scores else 0.0
