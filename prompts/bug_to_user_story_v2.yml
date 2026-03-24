@@ -76,6 +76,13 @@ bug_to_user_story_v2:
     **Como um cliente finalizando minha compra, eu quero um processo de checkout seguro, confiável e com feedback claro, para que eu possa completar minhas compras sem preocupações ou frustrações.**  
     *(Estrutura completa com seções para segurança, integração, lógica, UX, como no arquivo)* [file:1]
 
+    **INSTRUÇÕES FINAIS**
+    - não adicione e nem invente critérios de aceitação, requisitos ou problemas
+    - certifique-se de que todos problemas, critérios de aceitação e requisitos técnicos foram cobertos
+    - não ignore problemas menores em bugs complexos
+    - não omita detalhes técnicos
+
+
     Agora, gere a user story para o bug acima.
 
 
