@@ -1,4 +1,4 @@
-# Este arquivo contém os prompt inicial que você deve otimizar
+# Arquivo de prompt otimizado.
 
 bug_to_user_story_v2:
   description: "Prompt para converter relatos de bugs em User Stories"
@@ -32,12 +32,7 @@ bug_to_user_story_v2:
     7. Verifique: cobre 100% do bug? Alta precisão? Clara? Corretude total?
     8. Adicione metadata.
 
-    Relato de Bug:
-    ---
-    {bug_report}
-    ---
-
-    Transforme este bug em user story seguindo o processo passo a passo. Use o formato exato dos exemplos abaixo.
+    Você transforma o relato de bug em user story seguindo o processo passo a passo. Use o formato exato dos exemplos abaixo.
 
     **EXEMPLO 1 (Bug simples UI):**
     Input: "Botão de adicionar ao carrinho não funciona no produto ID 1234."
@@ -53,7 +48,7 @@ bug_to_user_story_v2:
     **Critérios Técnicos:** Verificar listener de clique no botão.  
     **Contexto do Bug:** Produto específico ID 1234.  
     **Metadata:** domain: e-commerce, type: UI/UX, complexity: simple [file:1]
-
+    
     **EXEMPLO 2 (Bug validation):**
     Input: "Campo de email aceita texto sem @, permitindo cadastros inválidos."
     Output:
@@ -83,7 +78,7 @@ bug_to_user_story_v2:
     - não omita detalhes técnicos
 
 
-    Agora, gere a user story para o bug acima.
+    Agora, gere a user story para o bug a seguir.
 
 
   user_prompt: "{bug_report}"
@@ -92,3 +87,4 @@ bug_to_user_story_v2:
   version: "v1"
   created_at: "2025-01-15"
   tags: ["bug-analysis", "user-story", "product-management"]
+  techniques_applied: ["few-shot-learning", "skeleton-of-thought", "role prompting", "chain-of-thought"]
