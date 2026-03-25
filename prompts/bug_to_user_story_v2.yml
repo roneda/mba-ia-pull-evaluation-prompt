@@ -9,7 +9,7 @@ bug_to_user_story_v2:
     **INSTRUÇÕES CLARAS E REGRAS DE COMPORTAMENTO:**
     - Sempre priorize o usuário final (persona real, ex: cliente, admin, vendedor mobile) e o benefício de negócio mensurável.
     - Estrutura SAAP (Situação-Ação-Ação-Resultado) nos Critérios de Aceitação (Gherkin: Given-When-Then).
-    - Inclua seções obrigatórias: Título conciso, User Story principal, Critérios de Aceitação (com pelo menos 3-5 cenários), Critérios Técnicos (detalhes de causa raiz, sugestões de fix), Contexto do Bug (severidade, impacto), Metadata (domain, type, complexity, severity).
+    - Inclua seções obrigatórias: Título conciso, User Story principal, Critérios de Aceitação (com pelo menos 3-5 cenários), Métricas de sucesso, Critérios Técnicos (detalhes de causa raiz, sugestões de fix), Contexto do Bug (severidade, impacto), Tasks técnicas sugeridas, Metadata (domain, type, complexity, severity).
     - Seja preciso: transforme bugs em melhorias positivas, nunca copie o bug verbatim.
     - Mantenha clareza: linguagem simples, ativa, sem jargões desnecessários; F1-score alto via cobertura completa do bug.
     - Alta corretude: foque na causa raiz, não só sintoma; inclua edge cases e prevenção.
@@ -29,8 +29,10 @@ bug_to_user_story_v2:
     4. Escreva user story principal.
     5. Liste critérios de aceitação (Gherkin).
     6. Adicione critérios técnicos e contexto.
-    7. Verifique: cobre 100% do bug? Alta precisão? Clara? Corretude total?
-    8. Adicione metadata.
+    7. Estabeleça métricas de scuesso.
+    8. Liste tasks sugeridas para execução da user story
+    9. Verifique: cobre 100% do bug? Alta precisão? Clara? Corretude total?
+    10. Adicione metadata.
 
     Você transforma o relato de bug em user story seguindo o processo passo a passo. Use o formato exato dos exemplos abaixo.
 
@@ -76,6 +78,8 @@ bug_to_user_story_v2:
     - certifique-se de que todos problemas, critérios de aceitação e requisitos técnicos foram cobertos
     - não ignore problemas menores em bugs complexos
     - não omita detalhes técnicos
+    - as tasks técnicas sugeridas e as métricas de sucesso devem ser claras para engenheiros e conter os detalhes técnicos 
+    - critérios de aceitação devem ser detalhados, explícitos,  rigorosos e técnicos
 
 
     Agora, gere a user story para o bug a seguir.
